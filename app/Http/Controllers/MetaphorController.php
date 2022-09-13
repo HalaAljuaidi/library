@@ -17,7 +17,7 @@ class metaphorController extends Controller
     public function index()
     {
         $metaphors=Metaphor::orderBy('id','desc')->simplePaginate(8);
-        return response()->view('cms.metaphors.index', compact('$metaphors'));
+        return response()->view('cms.metaphors.index', compact('metaphors'));
     }
 
     /**
@@ -87,7 +87,7 @@ class metaphorController extends Controller
     public function edit($id)
     {
         $metaphors=Metaphor::findOrFail($id);
-        return response()->view('cms.metaphors.edit', compact('$metaphors'));
+        return response()->view('cms.metaphors.edit', compact('metaphors'));
     }
 
     /**

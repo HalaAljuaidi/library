@@ -17,7 +17,7 @@ class EmployeeController extends Controller
     public function index()
     {
         $employees=Employee::orderBy('id','desc')->simplePaginate(8);
-        return response()->view('cms.employees.index', compact('$employees'));
+        return response()->view('cms.employees.index', compact('employees'));
     }
 
     /**
@@ -89,7 +89,7 @@ class EmployeeController extends Controller
     public function edit($id)
     {
         $employees=Employee::findOrFail($id);
-        return response()->view('cms.employees.edit', compact('$employees'));
+        return response()->view('cms.employees.edit', compact('employees'));
     }
 
     /**

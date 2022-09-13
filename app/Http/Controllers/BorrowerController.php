@@ -17,7 +17,7 @@ class BorrowerController extends Controller
     public function index()
     {
         $borrowers=Borrower::orderBy('id','desc')->simplePaginate(8);
-        return response()->view('cms.borrowers.index', compact('$borrowers'));
+        return response()->view('cms.borrowers.index', compact('borrowers'));
     }
 
     /**
@@ -87,7 +87,7 @@ class BorrowerController extends Controller
     public function edit($id)
     {
         $borrowers=Borrower::findOrFail($id);
-        return response()->view('cms.borrowers.edit', compact('$borrowers'));
+        return response()->view('cms.borrowers.edit', compact('borrowers'));
     }
 
     /**

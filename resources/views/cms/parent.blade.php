@@ -269,7 +269,60 @@
 
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              {{-- <i class="fas fa-user"></i> --}}
+              <p>
+                Employee
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('employees.index') }}" class="nav-link">
+                  <i class="fas fa-list nav-icon"></i>
+                  {{-- <i class="fas fa-list"></i> --}}
+                  <p>Index</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('employees.create') }}" class="nav-link">
+                  <i class="fas fa-plus-circle nav-icon"></i>
+                  {{-- <i class="fas fa-plus-circle"></i> --}}
+                  <p>Create</p>
+                </a>
+              </li>
 
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              {{-- <i class="fas fa-user"></i> --}}
+              <p>
+                Borrower
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('borrowers.index') }}" class="nav-link">
+                  <i class="fas fa-list nav-icon"></i>
+                  {{-- <i class="fas fa-list"></i> --}}
+                  <p>Index</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('borrowers.create') }}" class="nav-link">
+                  <i class="fas fa-plus-circle nav-icon"></i>
+                  {{-- <i class="fas fa-plus-circle"></i> --}}
+                  <p>Create</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
           <li class="nav-header">Resource Mangment</li>
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -300,8 +353,8 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-globe-asia"></i>
-              <p>
+                <i class="nav-icon fas fa-book"></i>
+                <p>
                 store
                 <i class="fas fa-angle-left right"></i>
               </p>
@@ -324,8 +377,8 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class=" fas fa-globe-asia"></i>
-              {{-- <i class=" nav-icon   fa-duotone fa-book-section"></i> --}}
+                <i class="nav-icon fas fa-book"></i>
+                {{-- <i class=" nav-icon   fa-duotone fa-book-section"></i> --}}
               <p>
                 Section
                 <i class="fas fa-angle-left right"></i>
@@ -340,6 +393,55 @@
               </li>
               <li class="nav-item">
                 <a href="{{ route('sections.create') }}" class="nav-link">
+                    <i class="fas fa-plus-circle nav-icon"></i>
+                    <p>Create</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+              <p>
+                Book
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('books.index') }}" class="nav-link">
+                    <i class="fas fa-list nav-icon"></i>
+                    <p>Index</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('books.create') }}" class="nav-link">
+                    <i class="fas fa-plus-circle nav-icon"></i>
+                    <p>Create</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                {{-- <i class=" nav-icon   fa-duotone fa-book-section"></i> --}}
+              <p>
+                Metaphor
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('metaphors.index') }}" class="nav-link">
+                    <i class="fas fa-list nav-icon"></i>
+                    <p>Index</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('metaphors.create') }}" class="nav-link">
                     <i class="fas fa-plus-circle nav-icon"></i>
                     <p>Create</p>
                 </a>

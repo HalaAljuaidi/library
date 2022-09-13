@@ -5,6 +5,14 @@ use App\Http\Controllers\LibraryController;
 use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\SectionController;
 use App\Http\Controllers\StoreController;
+use App\Http\Controllers\bookController;
+use App\Http\Controllers\BorrowerController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\metaphorController;
+
+
+
+
 use Illuminate\Support\Facades\Route;
 
 /*
