@@ -35,5 +35,15 @@ Route::prefix('cms/admin/')->group(function()
     Route::post('update_authors/{id}',[AuthorController::class,'update']);
     Route::resource('sections',SectionController::class);
     Route::post('sections_update/{id}',[SectionController::class,'update']);
+    Route::resource('borrowers', BorrowerController::class);
+    Route::post('borrowers_update/{id}', [Controller::class ,'update']);
+    Route::resource('books', BookController::class);
+    Route::post('books_update/{id}', [Controller::class ,'update']);
+    Route::resource('books_borrower', Book_borrowerController::class);
+    Route::post('books_borrower_update/{id}', [Controller::class ,'update']);
+    Route::resource('employees', EmployeeController::class);
+    Route::post('employees_update/{id}', [Controller::class ,'update']);
+    Route::resource('metaphors', MetaphorController::class);
+    Route::post('metaphors_update/{id}', [Controller::class ,'update']);
 
 });
