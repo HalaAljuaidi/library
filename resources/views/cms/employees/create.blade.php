@@ -70,7 +70,7 @@
 
           @endsection
 
-@endsection
+
 
 @section('scripts')
 <script>
